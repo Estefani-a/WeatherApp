@@ -30,7 +30,7 @@ class APIClient: UICollectionViewController{
         }
     }
     
-    static func weatherPromises(_ city: String) -> Promise<Clima> {
+    static func weatherPromises(_ city: String) -> Promise<clima> {
         return Promise { resolver in
             AF.request("http://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=e279928da4d766a7855a9e79b170d6ed&units=metric")
                 .responseDecodable(of: APIData.self) {
@@ -39,7 +39,7 @@ class APIClient: UICollectionViewController{
                         let temp = value.main.temp
                         let max = value.main.tempMax
                         let min = value.main.tempMin
-                        let weather = Clima(temp: temp, tempMax: max, tempMin: min)
+                        let weather = clima(temp: temp, tempMax: max, tempMin: min)
                         resolver.fulfill(weather)
                     } else {
                         resolver.reject(APIError.serverError)

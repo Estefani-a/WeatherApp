@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 // MARK: - APIData
 struct APIData: Codable {
     let coord: Coord

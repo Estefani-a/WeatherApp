@@ -18,11 +18,9 @@
 		5B7348952887797C0016F1A8 /* WeatherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7348942887797C0016F1A8 /* WeatherAppTests.swift */; };
 		5B73489F2887797C0016F1A8 /* WeatherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B73489E2887797C0016F1A8 /* WeatherAppUITests.swift */; };
 		5B7348A12887797C0016F1A8 /* WeatherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7348A02887797C0016F1A8 /* WeatherAppUITestsLaunchTests.swift */; };
-		5B7ECF0C289C47850019ED1A /* Wheather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7ECF0B289C47850019ED1A /* Wheather.swift */; };
+		5B7ECF0C289C47850019ED1A /* clima.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7ECF0B289C47850019ED1A /* clima.swift */; };
 		5B7ECF0E289C47B10019ED1A /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7ECF0D289C47B10019ED1A /* APIError.swift */; };
 		5B7ECF10289C47DB0019ED1A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7ECF0F289C47DB0019ED1A /* APIClient.swift */; };
-		5B7ECF13289C49720019ED1A /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7ECF11289C49720019ED1A /* WeatherTableViewCell.swift */; };
-		5B7ECF14289C49720019ED1A /* WeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B7ECF12289C49720019ED1A /* WeatherTableViewCell.xib */; };
 		7B380EC7A57D4BB306DBA94F /* Pods_WeatherAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C010E0A771A5C6CFAD067B0 /* Pods_WeatherAppTests.framework */; };
 		A7E9997704225855F9779D5F /* Pods_WeatherApp_WeatherAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D50FE0626EBADB870F138F4 /* Pods_WeatherApp_WeatherAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -64,11 +62,9 @@
 		5B73489A2887797C0016F1A8 /* WeatherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B73489E2887797C0016F1A8 /* WeatherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITests.swift; sourceTree = "<group>"; };
 		5B7348A02887797C0016F1A8 /* WeatherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		5B7ECF0B289C47850019ED1A /* Wheather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wheather.swift; sourceTree = "<group>"; };
+		5B7ECF0B289C47850019ED1A /* clima.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clima.swift; sourceTree = "<group>"; };
 		5B7ECF0D289C47B10019ED1A /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		5B7ECF0F289C47DB0019ED1A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		5B7ECF11289C49720019ED1A /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
-		5B7ECF12289C49720019ED1A /* WeatherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherTableViewCell.xib; sourceTree = "<group>"; };
 		D1D3B6E3684EFA9EB2F2CF96 /* Pods-WeatherApp-WeatherAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp-WeatherAppUITests.release.xcconfig"; path = "Target Support Files/Pods-WeatherApp-WeatherAppUITests/Pods-WeatherApp-WeatherAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D875F1C672DC705762743DD1 /* Pods-WeatherAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherAppTests.release.xcconfig"; path = "Target Support Files/Pods-WeatherAppTests/Pods-WeatherAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		E5306D2598405C1953577B72 /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.debug.xcconfig"; path = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,7 +115,6 @@
 		5B48F0E9289258B600AC2E39 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5B48F0EC289258FD00AC2E39 /* Cell */,
 				5B734881288779790016F1A8 /* HomeViewController.swift */,
 				5B734883288779790016F1A8 /* Main.storyboard */,
 			);
@@ -129,7 +124,7 @@
 		5B48F0EA289258BE00AC2E39 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5B7ECF0B289C47850019ED1A /* Wheather.swift */,
+				5B7ECF0B289C47850019ED1A /* clima.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -142,15 +137,6 @@
 				5B4B68D128A29F90009F05AA /* APIStruct.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		5B48F0EC289258FD00AC2E39 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				5B7ECF11289C49720019ED1A /* WeatherTableViewCell.swift */,
-				5B7ECF12289C49720019ED1A /* WeatherTableViewCell.xib */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		5B48F0ED2892590A00AC2E39 /* Resources */ = {
@@ -334,7 +320,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B7ECF14289C49720019ED1A /* WeatherTableViewCell.xib in Resources */,
 				5B73488A2887797C0016F1A8 /* LaunchScreen.storyboard in Resources */,
 				5B7348872887797C0016F1A8 /* Assets.xcassets in Resources */,
 				5B734885288779790016F1A8 /* Main.storyboard in Resources */,
@@ -467,8 +452,7 @@
 			files = (
 				5B734882288779790016F1A8 /* HomeViewController.swift in Sources */,
 				5B4B68D228A29F90009F05AA /* APIStruct.swift in Sources */,
-				5B7ECF0C289C47850019ED1A /* Wheather.swift in Sources */,
-				5B7ECF13289C49720019ED1A /* WeatherTableViewCell.swift in Sources */,
+				5B7ECF0C289C47850019ED1A /* clima.swift in Sources */,
 				5B73487E288779790016F1A8 /* AppDelegate.swift in Sources */,
 				5B7ECF0E289C47B10019ED1A /* APIError.swift in Sources */,
 				5B734880288779790016F1A8 /* SceneDelegate.swift in Sources */,
